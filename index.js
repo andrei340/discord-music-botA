@@ -12,6 +12,14 @@ require('dotenv').config();
 const ffmpegPath = require('ffmpeg-static');
 process.env.FFMPEG_PATH = ffmpegPath;
 
+
+
+// --- Keep alive pentru Render ---
+const express = require("express");
+const app = express();
+app.get("/", (req, res) => res.send("✅ Botul este online și activ!"));
+app.listen(3000, () => console.log("🌐 Server web (keep-alive) pornit pe portul 3000"));
+
 const dbPath = './database.json';
 
 function loadDB() {
