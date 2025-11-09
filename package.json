@@ -1,18 +1,28 @@
 {
-  "name": "discord-music-bot",
+  "name": "discord-bot",
   "version": "1.0.0",
   "main": "index.js",
+  "license": "MIT",
+  "husky": {
+    "skipCI": true
+  },
   "scripts": {
+    "prepare": "echo skip husky",
     "start": "node index.js"
   },
   "dependencies": {
     "discord.js": "^14.15.2",
-    "distube": "^4.1.0",
-    "@distube/yt-dlp": "^1.1.3",
-    "@distube/spotify": "^1.4.3",
-    "@distube/soundcloud": "^1.2.2",
+    "distube": "^5.0.7",
+    "@distube/yt-dlp": "^2.0.1",
+    "@distube/spotify": "^2.0.2",
+    "@distube/soundcloud": "^2.0.4",
+    "@discordjs/voice": "^0.17.0",
     "dotenv": "^16.4.0",
     "ffmpeg-static": "^5.2.0",
-    "play-dl": "^1.9.6"
+    "opusscript": "^0.1.1",
+    "libsodium-wrappers": "^0.7.15",
+    "play-dl": "^1.9.7",
+    "spotify-url-info": "^2.2.3",
+    "express": "^4.18.2"
   }
 }
